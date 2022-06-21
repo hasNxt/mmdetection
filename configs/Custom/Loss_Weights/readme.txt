@@ -1,0 +1,2 @@
+- LossWeight uses dynamic loss weights
+- weightedLosses uses static loss weights

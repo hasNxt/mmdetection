@@ -1,0 +1,4 @@
+- ClassWeights folder contains configs in which the weight of the classes (during classification) have been changed using some techniques.
+- Loss_Weights folder contains configs where the Losses have been weighted with different techniques (see readme inside)
+- ICIP are configs using HPN model
+- Faster are configs using Faster R-CNN

@@ -8,13 +8,17 @@ from .dataset_wrappers import (ClassBalancedDataset, ConcatDataset,
                                MultiImageMixDataset, RepeatDataset)
 from .deepfashion import DeepFashionDataset
 from .lvis import LVISDataset, LVISV1Dataset, LVISV05Dataset
-from .openimages import OpenImagesChallengeDataset, OpenImagesDataset
 from .samplers import DistributedGroupSampler, DistributedSampler, GroupSampler
 from .utils import (NumClassCheckHook, get_loading_pipeline,
                     replace_ImageToTensor)
 from .voc import VOCDataset
 from .wider_face import WIDERFaceDataset
 from .xml_style import XMLDataset
+from .my_coco_hoe import MyCocoHoe
+from .coco_orientation_tc import TCCocoDataset
+from .coco_accuracy import CocoDatasetAccuracy
+from .coco_8_orientation_tc import TC8CocoDataset
+from .coco_accuracy8 import CocoDatasetAccuracy8
 
 __all__ = [
     'CustomDataset', 'XMLDataset', 'CocoDataset', 'DeepFashionDataset',
@@ -24,5 +28,6 @@ __all__ = [
     'ClassBalancedDataset', 'WIDERFaceDataset', 'DATASETS', 'PIPELINES',
     'build_dataset', 'replace_ImageToTensor', 'get_loading_pipeline',
     'NumClassCheckHook', 'CocoPanopticDataset', 'MultiImageMixDataset',
-    'OpenImagesDataset', 'OpenImagesChallengeDataset'
+    'MyCocoHoe', 'TCCocoDataset', 'CocoDatasetAccuracy', 'TC8CocoDataset',
+    'CocoDatasetAccuracy8'
 ]
